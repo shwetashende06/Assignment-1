@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "88b6bc20-8ac2-40a6-9fde-0181d712884a",
+		"name": "Swagger specification for API testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23916527"
+	},
+	"item": [
+		{
+			"name": "https://gorest.co.in/public/v2/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a245aff1a147790dac11e3c93c450350a952cf65e7631ae6a61a917d0b6e24d3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": " operationId: listUsers",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://gorest.co.in/public/v2/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a245aff1a147790dac11e3c93c450350a952cf65e7631ae6a61a917d0b6e24d3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": " operationId: create user",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"raje\",\r\n\"email\": \"rj1302@gmail.com\",\r\n\"gender\": \"male\",\r\n\"status\": \"inactive\"\r\n}"
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://gorest.co.in/public/v2/users/3164",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a245aff1a147790dac11e3c93c450350a952cf65e7631ae6a61a917d0b6e24d3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "operationId: update user",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\"name\": \"Chakravartee Bhattacharya\",\r\n\"email\": \"chakravartee_bhattacharya@murray-goyette.biz\",\r\n\"gender\": \"female\",\r\n\"status\": \"active\"\r\n}"
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/3164",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"3164"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://gorest.co.in/public/v2/users/3162",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a245aff1a147790dac11e3c93c450350a952cf65e7631ae6a61a917d0b6e24d3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Length",
+						"value": "application/json",
+						"description": "The user id that needs to be deleted",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/3162",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"3162"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
